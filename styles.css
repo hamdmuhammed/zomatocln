@@ -123,8 +123,8 @@
     width: 70%;
 }
 .container{
-    margin: 3rem auto;
-    width: 80%;
+    margin: 0.5rem auto;
+    width: 95%;
 }
 .offers{
     display: flex;
@@ -184,7 +184,7 @@
 .collection_card_container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
     margin: 1rem;
@@ -235,4 +235,220 @@
     background: rgb(255, 254, 254);
     background: linear-gradient(180deg, rgba(255, 254, 254, 0) 0%, rgba(0, 0, 0, 0.5809759072983227) 100%);
     border-radius: 10px;
+}
+.appl-ad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255,251,247);
+    width: 100%;
+    padding: 15px 20px;
+}
+.appl-ad .semicont{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.appl-ad .semicont .left{
+    flex: 2;
+}
+.appl-ad .semicont .left img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.appl-ad .semicont .right{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.right h1{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.right p{
+    font-size: 0.8rem;
+}
+.radio_button_container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.radio_button_container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.radio_button_container div input{
+    height: 15px;
+    width: 15px;
+    accent-color: rgb(239, 75, 95);
+}
+.input_window_container{
+    display: flex;
+    gap: 0.5rem;
+}
+.input_window_container input, .input_window_container button{
+    padding: 10px 12px;
+    border-radius: 6px;
+}
+.input_window_container input{
+    outline: none;
+    flex: auto;
+    border: 1.5px solid grey;
+}
+.input_window_container button{
+    border: none;
+    background-color: rgb(239, 75, 95);
+    color: white;
+    cursor: pointer;
+}
+.right .stores{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.stores h5{
+    font-weight: 400;
+    color: gray;
+}
+.stores img{
+    width: 40%;
+    margin: 5px;
+}
+@media only screen and (max-width:1200px)
+{
+    .semicont .left, .semicont .right{
+        flex: 1;
+        padding: 2rem;
+    }
+    .appl-ad .semicont{
+        width: 90%;
+    }
+}
+@media only screen and (max-width:700px) {
+
+    .semicont .left,
+    .semicont .right {
+        flex: 1;
+        padding: 3rem 0;
+    }
+
+    .appl-ad .semicont {
+        width: 80%;
+        flex-direction: column;
+    }
+}
+.footer{
+    width: 100%;
+}
+.footer_section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+.footer_section1 > img{
+    width: 8rem;
+}
+.buttons_container{
+    display: flex;
+    gap: 1rem;
+}
+.buttons_container button{
+    padding: 5px;
+    width: 90%;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.directors{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; OR */
+    grid-template-columns: repeat(6, 1fr); /* fr=fragment*/
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    gap: 1rem;
+    padding: 3rem 0;
+    flex-wrap: wrap;
+}
+.redirectors{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.redirectors h5{
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    font-size: 15px;
+    margin: 5px 0;
+}
+.redirectors a{
+    text-decoration: none;
+    color: grey;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+.redirectors:hover{
+    color: black;
+    cursor: pointer;
+}
+.sub-directors{
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+.sub-directors button{
+    background-color: black;
+    /* color: white; */
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.sub-directors button i{
+    color: white;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    font-size: 14px;
+}
+.imgDir{
+    width: 85%;
+}
+.trademark hr{
+    color: grey;
+}
+.trademark p{
+    color: gray;
+    font-size: 12.5px;
+    font-weight: 300;
+}
+@media only screen and (max-width:900px)
+{
+    .directors{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media only screen and (max-width:450px) {
+    .directors {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (max-width:250px) {
+    .directors {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
