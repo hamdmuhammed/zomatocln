@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zomato Clone</title>
+    <link rel="icon" type="image/x icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Zomato_logo.png/220px-Zomato_logo.png">
+    <!-- css file -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- logo file -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- fonts file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="hero_section">
+        <header>
+            <nav class="nav___bar">
+                <a href="#" class="link">Get the app</a>
+                <div class="links">
+                <a href="#" class="link">Investor Relations</a>
+                <a href="#" class="link">Add Restaurant</a>
+                <a href="#" class="link">Log in</a>
+                <a href="#" class="link">Sign up</a>
+                <a href="#" class="sp_link"><i class="fa-regular fa-user"></i></a>
+                </div>
+            </nav>
+        </header>
+        <div class="hero_section_container">
+        <img src="./images/heroSectionLogo.png" alt="zomatoLogo" class="hero_section_logo">
+        <h1 class="hero_section_assistant">Discover the best food & drinks in Pune</h1>
+        <div class="hero_section_searchBar">
+        <i class="fa-solid fa-location-dot" style="color: #f46262;" id="loci"></i>
+        <select name="lg" class="loci_bar"><option value="a">Pune</option><option value="k" style="color:#f46262;">Detect current location</option>
+        <i class="fa-solid fa-magnifying-glass" style="color: #e0e0e0;" id="mgn"></i>
+        <input type="text" placeholder="Search for Restaurant, cuisine or a dish" class="searchBar">
+        </div>
+        </div>
+    </section>
+    <section class="container offers">
+      <div class="offer_cards">
+        <img src="./images/item1.png" alt="offer1">
+        <div class="offer_content">
+          <h2>Order Online</h2>
+          <p>Stay home and order to your doorstep</p>
+        </div>
+        </div>
+        <div class="offer_cards">
+        <img src="./images/item2.png" alt="offer2">
+        <div class="offer_content">
+          <h2>Dining</h2>
+          <p>View the city's favourite dining venues</p>
+        </div>
+        </div>
+        <div class="offer_cards">
+        <img src="./images/item3.png" alt="offer3">
+        <div class="offer_content">
+          <h2>Nigthlife and Clubs</h2>
+          <p>Explore the city's top nightlife outlets</p>
+        </div>
+        </div>
+
+    </section>
+    <section class="container collections">
+      <h1>Collections</h1>
+      <div class="sub_heading">
+        <span>Explore curated lists of top restaurants, cafes, pubs, and bars in Pune, based on trends</span>
+        <span>All collections in Pune</span>
+      </div>
+      <div class="collection_card_container">
+      <div class="card coll_card1">
+        <div class="overlay">
+        </div>
+        <div class="contents">
+          <h4>Newly opened Restaurants</h4>
+          <span>11 Places</span>
+        </div>
+      </div>
+      <div class="card coll_card2">
+        <div class="overlay">
+        </div>
+        <div class="contents">
+          <h4>Best in Pune</h4>
+          <span>16 Palces</span>
+        </div>
+      </div>
+      <div class="card coll_card3">
+        <div class="overlay">
+        </div>
+        <div class="contents">
+          <h4>Must-vist Legendary Places</h4>
+          <span>19 Places</span>
+        </div>
+      </div>
+      <div class="card coll_card4">
+        <div class="overlay">
+        </div>
+        <div class="contents">
+          <h4>Serene Rooftop Places</h4>
+          <span>21 Places</span>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="container appl-ad">
+      <div class="semicont">
+        <div class="left">
+          <img src="./images/mobileBanner.png" alt="appln">
+        </div>
+        <div class="right">
+          <h1>Get the Zomato app</h1>
+          <p>We will send you a link, open it on your phone to download the app</p>
+          <div class="radio_button_container">
+            <div>
+            <input type="radio" name="get_app" id="email">
+            <label for="email" style="font-size: 14px;">Email</label>
+          </div>
+          <div>
+            <input type="radio" name="get_app" id="phone">
+            <label for="phone" style="font-size: 14px;">Phone</label>
+          </div>
+          </div>
+          <div class="input_window_container">
+          <input type="email" placeholder="Email">
+          <button>Share the App link</button>
+        </div>
+        <div class="stores">
+          <h5>Download App from</h5>
+          <div>
+          <img src="./images/playStore.png" alt="playStore">
+          <img src="./images/appleStore.png" alt="appleStore">
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <footer class="container footer">
+      <div class="footer_section1">
+        <img src="./images/logo.png" alt="zomatoLogo">
+        <div class="buttons_container">
+          <button style="width: 5rem;"><img src="https://flagcdn.com/w40/in.png" alt="indFlag" style="width:15px;"> India</button>
+          <button style="width: 5rem;"><i class="fa fa-globe" alt="globe"></i>English</button>
+        </div>
+      </div>
+      <div class="directors">
+      <div class="redirectors">
+        <h5>ABOUT ZOMATO</h5>
+        <a href="#" class="footerLink">Who We Are</a>
+        <a href="#" class="footerLink">Work With Us</a>
+        <a href="#" class="footerLink">Blog</a>
+        <a href="#" class="footerLink">Investor Relations</a>
+        <a href="#" class="footerLink">Report Fraud</a>
+        <a href="#" class="footerLink">Press Kit</a>
+        <a href="#" class="footerLink">Contact Us</a>
+      </div>
+      <div class="redirectors">
+        <h5>ZOMAVERSE</h5>
+        <a href="#" class="footerLink">Zomato</a>
+        <a href="#" class="footerLink">Blinkit</a>
+        <a href="#" class="footerLink">Feeding India</a>
+        <a href="#" class="footerLink">Hypercure</a>
+        <a href="#" class="footerLink">Zomaland</a>
+      </div>
+      <div class="redirectors">
+        <h5>FOR RESTAURANTS</h5>
+        <a href="#" class="footerLink">Partner With Us</a>
+        <a href="#" class="footerLink">Apps For You</a>
+      </div>
+      <div class="redirectors">
+        <h5>FOR ENTERPRISES</h5>
+        <a href="#" class="footerLink">Zomato For Enterprise</a>
+      </div>
+      <div class="redirectors">
+        <h5>LEARN MORE</h5>
+        <a href="#" class="footerLink">Privacy</a>
+        <a href="#" class="footerLink">Security</a>
+        <a href="#" class="footerLink">Terms</a>
+        <a href="#" class="footerLink">Sitemap</a>
+      </div>
+      <div class="redirectors">
+        <h5>SOCIAL LINKS</h5>
+        <div>
+        <div class="sub-directors">
+        <button><i class="fa-brands fa-linkedin-in"></i></button>
+        <button><i class="fa-brands fa-instagram"></i></button>
+        <button><i class="fa-brands fa-twitter"></i></button>
+        <button><i class="fa-brands fa-youtube"></i></button>
+        <button><i class="fa-brands fa-facebook"></i></button>
+        </div>
+        <div class="logogo">
+         <br>
+          <img src="./images/appleStore.png" alt="appleStore" class="imgDir">
+          <img src="./images/playStore.png" alt="playStore" class="imgDir">
+        </div>
+        </div>
+      </div>
+      </div>
+      <div class="trademark">
+      <hr>
+      <br>
+      <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2024 © Zomato™ Ltd. All rights reserved.</p>
+      <br>
+      <br>
+    </div>
+    </footer>
+  </body>
+</html>
